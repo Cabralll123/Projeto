@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="top">
+        <div class="linha"></div>
+            
+      </div>
+<!--
+ 
+> <form> </form>   : Seria o formulario , tudo fica dentro dele!
+> <Label> </Label> : descrição para o campo
+> input            : Adicionar  um campo/ ou um botão dependendo do type que selecionar
+>  for             : serve para fazer a relação do label,com o input onde colocamos o name que seria  propiedade!
+> id               : código de identificação
+> name             : seria a propiedade 
+> TIPO submit           : é um botão que ira se submeter a esse formulário que estou criando 
+ > required         : é para tornar um campo obrigatório
+ > tipo RADIO       : você pode selecionar apenas um check box 
+ --> 
+ <!--   <h1 id="CadPac">Cadastro Paciente</h1> --> 
+
+    
+
+         <form >           
+<!-- NOME PACIENTE-->
+    <h2 id="title-pacientes">Paciente</h2>
+
+        <label  class="pnome" for="pnome">Nome Completo:</label>
+             <input  id="NomeCompleto" name="NomeCompleto"   required> 
+ <!-- SEXO PACIENTE-->
+        <label class="sexo" for="sexo"> Sexo: 
+            
+            <select name="sexo" id="sexo">
+                <option selected disabled value="">Sexo</option>
+                <option>F</option> 
+                <option>M</option>
+                
+        </label>
+          </select> 
+<!-- DATA NASCIMENTO --> 
+          <label class="nascimento" for="nascimento">Data Nascimento :</label>
+          <input type="date" name="nascimento" id="nascimento" > 
+<!-- RG  --> 
+        <label class="RG" for="RG">RG:</label>
+       <input type="text" id="RG" name="RG" > 
+<!-- cpf --> 
+       <label class="CPF" for="CPF">CPF</label>
+       <input type="text" id="CPF" name="CPF" required>
+
+        <br> <br>
+ 
+ <h2 id="title-end-cont">Endereço/Contato</h2>
+    
+        <!-- cpf --> 
+       <label class="cep" for="cep">Cep</label>
+       <input type="text" id="cep" name="cep" >
+
+<!-- endereço --> 
+        <label class="end" for="end">Endereço</label>
+        <input type="text" id="end" name="end" >
+ 
+<!-- cidade --> 
+         <label class="cidade" for="cidade">Cidade</label>
+         <input type="text" id="cidade" name="cidade" >
+<!-- telefone --> 
+         <label class="tel" for="tel" >Telefone</label>
+         <input type="text" id="tel" name="tel"> 
+         <label class="cel" for="cel">Celular</label>
+         <input type="text" id="cel" name="cel ">
+  
+          <br> <br>
+        
+<!--  MEDICO -->
+<h2 id="title-medicos">Médico</h2>
+ <br>
+ <label class="crm" for="crm">CRBM</label>
+ <input type="number" id="crm" name="crm">
+
+ <label class="nome-medico" for="nome-medico">Nome do Médico</label>
+ <input type="text" id="nome-medico" name="nome-medico">
+
+<!-- EXAMES  -->
+
+<h2 id="title-exames">Exames</h2>
+
+
+<!--   -->
+
+      

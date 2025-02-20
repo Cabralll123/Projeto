@@ -1,96 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Paciente</title>
-    <link rel="stylesheet" href="index.css">
-    
+    <!-- Define o tipo de documento e o idioma da página -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Cadastro de Paciente</title> <!-- Título da página -->
+    <link rel="stylesheet" href="index.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 <body>
+    <!-- Cabecalho da pagina Topo da página -->
     <div class="top">
-        <div class="linha"></div>
-            
-      </div>
-<!--
- 
-> <form> </form>   : Seria o formulario , tudo fica dentro dele!
-> <Label> </Label> : descrição para o campo
-> input            : Adicionar  um campo/ ou um botão dependendo do type que selecionar
->  for             : serve para fazer a relação do label,com o input onde colocamos o name que seria  propiedade!
-> id               : código de identificação
-> name             : seria a propiedade 
-> TIPO submit           : é um botão que ira se submeter a esse formulário que estou criando 
- > required         : é para tornar um campo obrigatório
- > tipo RADIO       : você pode selecionar apenas um check box 
- --> 
- <!--   <h1 id="CadPac">Cadastro Paciente</h1> --> 
+        <div class="linha"></div> <!-- Linha decorativa no topo -->
+    </div>
 
-    
+    <!-- Container principal do formulário -->
+    <div class="Info-Paciente">
+        <form>
+            <!-- Seção: PACIENTE -->
+            <h2 id="title-pacientes">Paciente</h2> <!-- Título da seção -->
+            <div class="form-row">
+                <!-- Nome Completo -->
+                <div class="form-group">
+                    <label for="NomeCompleto">Nome Completo:</label> <!-- Label do campo -->
+                    <input type="text" id="NomeCompleto" name="NomeCompleto" required> <!-- Campo de texto obrigatório -->
+                </div>
 
-         <form >           
-<!-- NOME PACIENTE-->
-    <h2 id="title-pacientes">Paciente</h2>
+                <!-- Sexo -->
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label> <!-- Label do campo -->
+                    <select name="sexo" id="sexo"> <!-- Dropdown para seleção de sexo -->
+                        <option selected disabled value="">Sexo</option> <!-- Opção padrão -->
+                        <option>F</option> <!-- Opção Feminino -->
+                        <option>M</option> <!-- Opção Masculino -->
+                    </select>
+                </div>
 
-        <label  class="pnome" for="pnome">Nome Completo:</label>
-             <input  id="NomeCompleto" name="NomeCompleto"   required> 
- <!-- SEXO PACIENTE-->
-        <label class="sexo" for="sexo"> Sexo: 
-            
-            <select name="sexo" id="sexo">
-                <option selected disabled value="">Sexo</option>
-                <option>F</option> 
-                <option>M</option>
-                
-        </label>
-          </select> 
-<!-- DATA NASCIMENTO --> 
-          <label class="nascimento" for="nascimento">Data Nascimento :</label>
-          <input type="date" name="nascimento" id="nascimento" > 
-<!-- RG  --> 
-        <label class="RG" for="RG">RG:</label>
-       <input type="text" id="RG" name="RG" > 
-<!-- cpf --> 
-       <label class="CPF" for="CPF">CPF</label>
-       <input type="text" id="CPF" name="CPF" required>
+                <!-- Data Nascimento -->
+                <div class="form-group">
+                    <label for="nascimento">Data Nascimento:</label> <!-- Label do campo -->
+                    <input type="date" id="nascimento" name="nascimento"> <!-- Campo de data -->
+                </div>
+            </div>
 
-        <br> <br>
- 
- <h2 id="title-end-cont">Endereço/Contato</h2>
-    
-        <!-- cpf --> 
-       <label class="cep" for="cep">Cep</label>
-       <input type="text" id="cep" name="cep" >
+            <div class="form-row">
+                <!-- RG -->
+                <div class="form-group">
+                    <label for="RG">RG:</label> <!-- Label do campo -->
+                    <input type="text" id="RG" name="RG"> <!-- Campo de texto para RG -->
+                </div>
 
-<!-- endereço --> 
-        <label class="end" for="end">Endereço</label>
-        <input type="text" id="end" name="end" >
- 
-<!-- cidade --> 
-         <label class="cidade" for="cidade">Cidade</label>
-         <input type="text" id="cidade" name="cidade" >
-<!-- telefone --> 
-         <label class="tel" for="tel" >Telefone</label>
-         <input type="text" id="tel" name="tel"> 
-         <label class="cel" for="cel">Celular</label>
-         <input type="text" id="cel" name="cel ">
-  
-          <br> <br>
-        
-<!--  MEDICO -->
-<h2 id="title-medicos">Médico</h2>
- <br>
- <label class="crm" for="crm">CRBM</label>
- <input type="number" id="crm" name="crm">
+                <!-- CPF -->
+                <div class="form-group">
+                    <label for="CPF">CPF:</label> <!-- Label do campo -->
+                    <input type="text" id="CPF" name="CPF" required> <!-- Campo de texto obrigatório para CPF -->
+                </div>
+            </div>
 
- <label class="nome-medico" for="nome-medico">Nome do Médico</label>
- <input type="text" id="nome-medico" name="nome-medico">
+            <!-- Seção: ENDEREÇO/CONTATO -->
+            <h2 id="title-end-cont">Endereço/Contato</h2> <!-- Título da seção -->
+            <div class="form-row">
+                <!-- CEP -->
+                <div class="form-group">
+                    <label for="cep">CEP:</label> <!-- Label do campo -->
+                    <input type="text" id="cep" name="cep"> <!-- Campo de texto para CEP -->
+                </div>
 
-<!-- EXAMES  -->
+                <!-- Endereço -->
+                <div class="form-group">
+                    <label for="end">Endereço:</label> <!-- Label do campo -->
+                    <input type="text" id="end" name="end"> <!-- Campo de texto para endereço -->
+                </div>
 
-<h2 id="title-exames">Exames</h2>
+                <!-- Cidade -->
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label> <!-- Label do campo -->
+                    <input type="text" id="cidade" name="cidade"> <!-- Campo de texto para cidade -->
+                </div>
+            </div>
+
+            <div class="form-row">
+                <!-- Telefone -->
+                <div class="form-group">
+                    <label for="tel">Telefone:</label> <!-- Label do campo -->
+                    <input type="text" id="tel" name="tel"> <!-- Campo de texto para telefone -->
+                </div>
+
+                <!-- Celular -->
+                <div class="form-group">
+                    <label for="cel">Celular:</label> <!-- Label do campo -->
+                    <input type="text" id="cel" name="cel"> <!-- Campo de texto para celular -->
+                </div>
+            </div>
+
+            <!-- Seção: MÉDICO -->
+            <h2 id="title-medicos">Médico</h2> <!-- Título da seção -->
+            <div class="form-row">
+                <!-- CRBM -->
+                <div class="form-group">
+                    <label for="crm">CRBM:</label> <!-- Label do campo -->
+                    <input type="text" id="crm" name="crm" required> <!-- Campo numérico obrigatório para CRBM -->
+                </div>
+
+                <!-- Nome do Médico -->
+                <div class="form-group">
+                    <label for="nome-medico">Nome do Médico:</label> <!-- Label do campo -->
+                    <input type="text" id="nome-medico" name="nome-medico"> <!-- Campo de texto para nome do médico -->
+                </div>
+
+                  <!-- Nome do convênio -->
+                <div class="form-group">
+                    <label for="NomeConv">Convênio</label>
+                    <input form="NomeCon" id="NomeCon" name="NomeCon">
+                </div>
+            </div>
 
 
-<!--   -->
 
-      
+            <!-- Seção: EXAMES -->
+            <h2 id="title-exames">Exames</h2> <!-- Título da seção -->
+            <div class="form-row">
+                <!-- Sigla do Exame -->
+                 
+                    <div class="form-group">
+                    <label for="sigla-exame">Sigla:</label> <!-- Label do campo -->
+                    <input type="text" id="sigla-exame" required> <!-- Campo de texto obrigatório para sigla do exame -->
+                    </div>
+               
+
+                <!-- Descrição do Exame -->
+                 
+                    <div class="form-group">
+                        <label for="DescExame">Descrição do exame</label>
+                        <input type="text" id="DescExame" name="DescExame">
+                    </div>
+
+                <!-- Valor do Exame -->
+                    
+                    <div class="form-group">
+                        <label for="PrecoExame">Preço</label>
+                        <input type="text" id="PrecoExame">
+                    </div>
+                    
+             
+
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,202 +1,124 @@
+/* Estilos gerais */
 body {
-    background: linear-gradient(0deg, rgb(71, 111, 138) 0%, rgb(200, 230, 250) 100%);
-    width: 100%;  /* Garantir que o corpo ocupe toda a largura da tela */
-    height: 100vh;  /* Garantir que o corpo ocupe toda a altura da tela */
-    margin: 0;  /* Remover margem padrão */
-    padding: 0;  /* Remover padding padrão */
+    background: linear-gradient(0deg, rgb(71, 111, 138) 0%, rgb(200, 230, 250) 100%); /* Gradiente de fundo */
+    width: 100%; /* Largura total da página */
+    height: 100vh; /* Altura total da viewport */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
 }
 
-.pnome {
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size:15px;
-}
-        
-input {
-    border-radius: 7px;
-}
-
-.nascimento{
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size:15px;
+/* Container principal do formulário */
+.Info-Paciente {
+    position: relative; /* Posicionamento relativo */
+    top: 15px; /* Distância do topo */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Espaçamento interno */
 }
 
-.RG {
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size:15px;
+/* Container flexível para os inputs */
+.form-row {
+    display: flex; /* Ativa o Flexbox */
+    gap: 20px; /* Espaçamento entre os inputs */
+    margin-bottom: 25px; /* Espaçamento entre as linhas */
 }
 
-.CPF{
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size:15px;
-}
-.email{ 
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-.top {
-    width: 100%;
-    height: 50px;
-   
-    background: linear-gradient( rgb(15, 60, 156) 0%, rgb(17, 73, 110) 100%);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-/*     TITULOS PACIENTE H2/h1    */
-
-
-#CadPac {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#title-pacientes{
+/* Estilo para cada grupo de label e input */
+.form-group {
+    flex: 1; /* Faz com que cada grupo ocupe o mesmo espaço */
     
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: rgb(72, 112, 139);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
-
+    display: flex;
+    flex-direction: column; /* Label acima do input */
 }
-#title-end-cont {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: rgb(72, 112, 139);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.CodExame{
+     flex: 1; /* Faz com que cada grupo ocupe o mesmo espaço */
+    display: flex;
+    flex-direction: column; /* Label acima do input */
 }
-
-#exames {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: rgb(72, 112, 139);
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
+.form-group label {
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 5px; /* Espaçamento abaixo da label */
+    color: #333; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
 }
 
-
-
-#title-medicos {  
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: rgb(72, 112, 139);
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
+.form-group input,
+.form-group select {
+    width: 100%; /* Largura total do container */
+    padding: 8px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho da fonte */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
 }
-#title-exames {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: rgb(72, 112, 139);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+.form-group select {
+    appearance: none; /* Remove o estilo padrão do select */
+    background-color: white; /* Cor de fundo */
 }
 
 
-/* dados paciente*/
-
-
-#NomeCompleto{
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 400px;
-    height: 25px;
+/* Estilo para os títulos das seções */
+h2 {
+    font-size: 20px; /* Tamanho da fonte */
+    color: rgb(72, 112, 139); /* Cor do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
 }
 
-#sexo {
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
+/* Estilo para o topo da página */
+.top {
+    width: 100%; /* Largura total */
+    height: 50px; /* Altura fixa */
+    background: linear-gradient(rgb(15, 60, 156) 0%, rgb(17, 73, 110) 100%); /* Gradiente de fundo */
+    position: relative; /* Posicionamento relativo */
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-#nascimento{
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
-}
-#RG{
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
-}
-#CPF{
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
+/* Estilos específicos para inputs */
+#NomeCompleto,
+#sexo,
+#nascimento,
+#RG,
+#CPF,
+#cep,
+#end,
+#cidade,
+#tel,
+#cel,
+#crm,
+#nome-medico,
+#sigla-exame {
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    height: 35px; /* Altura fixa */
+    padding: 5px; /* Espaçamento interno */
 }
 
-#cep {
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
+/* Ajustes para inputs menores */
+#sexo,
+#nascimento,
+#RG,
+#CPF,
+#cep,
+#end,
+#cidade,
+#tel,
+#cel,
+#crm,
+#sigla-exame {
+    width: 100%; /* Largura total */
 }
 
-#end {
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
-}
-
-#cidade {
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
-}
-
-#tel {
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
-}
-
-#cel {
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 250px;
-    height: 25px;
-}
-
-
-/*    DADOS MEDICO    */
-
-
+/* Estilo para o input CRM */
 #crm {
-
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 150px;
-    height: 25px;
+    width: 200px; /* Ajuste conforme o tamanho desejado */
 }
 
-#nome-medico{
-    border: 03px;
-    border-color: grey;
-    border-radius: 5px solid transparent;
-    width: 400px;
-    height: 25px;
+/* Estilo para o input Sigla do Exame */
+#sigla-exame {
+    width: 60px; /* Ajuste conforme o tamanho desejado */
 }

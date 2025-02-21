@@ -1,4 +1,45 @@
 /* Estilos gerais */
+/* Estilo para o topo da página */
+.ColorBackground-Cab {
+    width: 100%; /* Largura total */
+    height: 70px; /* Altura fixa */
+    background: linear-gradient(rgb(15, 60, 156) 0%, rgb(17, 73, 110) 100%); /* Gradiente de fundo */
+    position: relative; /* Posicionamento relativo */
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-repeat: no-repeat;
+}
+.box-article{
+   
+    background-color: rgba(228, 228, 228, 0.568); /* Fundo semi-transparente */
+    backdrop-filter: blur(10px); /* Aplica um desfoque no fundo */
+    position: relative; /* Posicionamento relativo */
+    top: 15px; /* Distância do topo */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Espaçamento interno */
+    margin-top:  -20px;
+    border-radius: 15px;
+}
+   
+  
+
+.Menu-cab{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#gestao { 
+    font-size: 30px;
+    padding: 20px;
+    text-decoration:none;
+
+}
+a{
+    color: rgb(20, 55, 87);
+    
+}
+
+
 body {
     background: linear-gradient(0deg, rgb(71, 111, 138) 0%, rgb(200, 230, 250) 100%); /* Gradiente de fundo */
     width: 100%; /* Largura total da página */
@@ -8,6 +49,7 @@ body {
     font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
 }
 
+
 /* Container principal do formulário */
 .Info-Paciente {
     position: relative; /* Posicionamento relativo */
@@ -15,6 +57,7 @@ body {
     max-width: 1200px; /* Largura máxima do container */
     margin: 0 auto; /* Centraliza o container */
     padding: 20px; /* Espaçamento interno */
+    margin-top:  -30px;
 }
 
 /* Container flexível para os inputs */
@@ -67,19 +110,11 @@ h2 {
     margin-bottom: 15px; /* Espaçamento abaixo do título */
 }
 
-/* Estilo para o topo da página */
-.top {
-    width: 100%; /* Largura total */
-    height: 50px; /* Altura fixa */
-    background: linear-gradient(rgb(15, 60, 156) 0%, rgb(17, 73, 110) 100%); /* Gradiente de fundo */
-    position: relative; /* Posicionamento relativo */
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-}
 
 /* Estilos específicos para inputs */
-#NomeCompleto,
+#NomeCompleto {
+    width: 600px;
+}
 #sexo,
 #nascimento,
 #RG,
@@ -91,12 +126,7 @@ h2 {
 #cel,
 #crm,
 #nome-medico,
-#sigla-exame {
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    height: 35px; /* Altura fixa */
-    padding: 5px; /* Espaçamento interno */
-}
+
 
 /* Ajustes para inputs menores */
 #sexo,
@@ -121,4 +151,10 @@ h2 {
 /* Estilo para o input Sigla do Exame */
 #sigla-exame {
     width: 60px; /* Ajuste conforme o tamanho desejado */
+   
+}
+
+#DescExame{
+    width: 700px;
+
 }

@@ -7,30 +7,39 @@
     <link rel="stylesheet" href="gestao.css">
 </head>
 <body>
-    <div class="top" >
-        <div class="linha"></div> <!-- Linha decorativa no topo -->
-    </div>
+   <!-- Explicação:
+    O atributo onclick executa o código JavaScript window.location.href quando o botão é clicado, redirecionando o usuário para a URL especificada. -->
 
-    <div class="Geral">
-    <H1> GESTÃO DO SISTEMA</H1> <br> <br>
+    <header class="ColorBackground-Cab">
+    
+        <div class="title-gestao">
+            <H1> GESTÃO DO SISTEMA</H1> 
+        </div> <!-- Linha decorativa no topo -->
+   
+    </header>
 
-    <H1>CADASTROS</H1>
-
-    <H2>Pacientes</H2>
-
-    <button>ACESSAR</button>
-
-    <H2>médico</H2>
+    <article class="Geral">
+    
        
-    <button  >ACESSAR</button>
+
+        <H1 id="title-cad">CADASTRAR</H1>
+        
+       
+            <H2>Pacientes</H2>
+            <button id="Paciente" onclick="window.location.href='/index/index.html'">ACESSAR</button>
+        
+
+             <H2 class="Medico">médico</H2>
+       
+                 <button id="Medico" onclick="window.location.href='/CadMed/cadmed.html'">ACESSAR</a></button>
    
 
-    <H2>Exames</H2>
+            <H2>Exames</H2>
 
-    <button>ACESSAR</button>
+                 <button id="cadexame"onclick="window.location.href='/CadExa/cadexa.html'">ACESSAR</a></button>
     
-    </div>
-    
+   
+    </article>
 
 
 

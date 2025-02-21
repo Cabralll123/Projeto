@@ -9,10 +9,20 @@ body {
 
 .Geral{
     padding:30px; /* Remove paddings padrão */
+    align-items: center;
+    display:flexbox;
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 10px;
+    
 
 }
+a{
+    color: rgb(20, 55, 87);
+    text-decoration: none;
+}
 
-.top {
+.ColorBackground-Cab {
     width: 100%; /* Largura total */
     height: 70px; /* Altura fixa */
     background: linear-gradient(rgb(15, 60, 156) 0%, rgb(17, 73, 110) 100%); /* Gradiente de fundo */
@@ -20,7 +30,10 @@ body {
     display: flex; /* Ativa o Flexbox */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+    background-repeat: no-repeat;
 }
+
+
 
 
 button{
@@ -31,8 +44,17 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     background-color:  rgb(227, 244, 255);
     border-radius: 10px;
+    text-decoration: none;
+    
 }
 
 button:hover {
     background-color: rgba(71, 111, 138); 
+}
+
+#title-cad {
+    font-size: 40px; /* Tamanho da fonte */
+    color: rgb(27, 82, 119); /* Cor do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
 }

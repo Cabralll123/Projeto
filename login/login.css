@@ -1,11 +1,15 @@
 body {
     background-image: url(https://isac.org.br/wp-content/uploads/2024/04/experiencia-do-paciente-cuidados.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+    
 }
 
 
 div {
-    background-color: rgba(71, 111, 138, 0.4); /* Fundo semi-transparente */
-    backdrop-filter: blur(10px); /* Aplica um desfoque no fundo */
+    background-color: rgba(0, 110, 255, 0.37); /* Fundo semi-transparente */
+    backdrop-filter: blur(25px); /* Aplica um desfoque no fundo */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,7 +54,7 @@ input {
 }
 
 button {
-    background-color: rgba(71, 111, 138); 
+    background-color: rgba(13, 38, 180, 0.712); 
     color: white;
     padding: 15px 32px; 
     border: none; 
@@ -58,8 +62,10 @@ button {
     font-size: 16px;
     cursor: pointer; 
     transition: background-color 0.3s ease;
+   
 }
 
+
 button:hover {
-    background-color: rgba(71, 111, 138); 
+    background-color: rgba(5, 30, 100, 0.836); 
 }

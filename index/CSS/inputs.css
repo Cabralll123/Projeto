@@ -1,0 +1,48 @@
+
+/* Estilos específicos para inputs */
+#NomeCompleto {
+    width: 600px;
+}
+#sexo,
+#nascimento,
+#RG,
+#CPF,
+#cep,
+#end,
+#cidade,
+#tel,
+#cel,
+#crm,
+#nome-medico,
+
+
+/* Ajustes para inputs menores */
+#sexo,
+#nascimento,
+#RG,
+#CPF,
+#cep,
+#end,
+#cidade,
+#tel,
+#cel,
+#crm,
+#sigla-exame {
+    width: 100%; /* Largura total */
+}
+
+/* Estilo para o input CRM */
+#crm {
+    width: 200px; /* Ajuste conforme o tamanho desejado */
+}
+
+/* Estilo para o input Sigla do Exame */
+#sigla-exame {
+    width: 60px; /* Ajuste conforme o tamanho desejado */
+   
+}
+
+#DescExame{
+    width: 700px;
+
+}

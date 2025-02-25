@@ -4,48 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GESTÃO</title>
-    <link rel="stylesheet" href="gestao.css">
+    <link rel="stylesheet" href="CSS/gestao.css">
 </head>
 <body>
-   <!-- Explicação:
-    O atributo onclick executa o código JavaScript window.location.href quando o botão é clicado, redirecionando o usuário para a URL especificada. -->
-
     <header class="ColorBackground-Cab">
-    
         <div class="title-gestao">
-            <H1> GESTÃO DO SISTEMA</H1> 
-        </div> <!-- Linha decorativa no topo -->
-   
+            <H1>GESTÃO DO SISTEMA</H1>
+        </div>
     </header>
 
-    <article class="Geral">
-    
-       
-
-        <H1 id="title-cad">CADASTRAR</H1>
+    <article>
         
-       
-            <H2>Pacientes</H2>
-            <button id="Paciente" onclick="window.location.href='/index/index.html'">ACESSAR</button>
         
+        <div class="container">
+            <div class="imagem">
+                <img src="imagens/imagem1.jpg" alt="imagem de gestao de laboratório" width="200">
+        </div>
+            
+            <div class="informacoes">
 
-             <H2 class="Medico">médico</H2>
-       
-                 <button id="Medico" onclick="window.location.href='/CadMed/cadmed.html'">ACESSAR</a></button>
-   
+                <H1 id="title-cad">CADASTRAR</H1>
+                <div class="item1">
+                    <H2>Pacientes</H2>
+                    <button id="Paciente" onclick="window.location.href='/index/index.html'">ACESSAR</button>
+                </div>
+                
+                <div class="item2">
+                    <H2 class="Medico">Médico</H2>
+                    <button id="Medico" onclick="window.location.href='/CadMed/cadmed.html'">ACESSAR</button>
+                </div>
+                
+                <div class="item3">
+                    <H2>Exames</H2>
+                    <button id="cadexame" onclick="window.location.href='/CadExa/cadexa.html'">ACESSAR</button>
+                </div>
 
-            <H2>Exames</H2>
+                <div class="item4">
+            </div>
 
-                 <button id="cadexame"onclick="window.location.href='/CadExa/cadexa.html'">ACESSAR</a></button>
-    
-   
+            <div class="item4">
+            <H2>Cadastrar Usuários de acesso</H2>
+            
+            </div>
+        <button id="cadexame" onclick="window.location.href='/CadExa/cadexa.html'">ACESSAR</button>
+        </div>
+
+
+        </div>
     </article>
-
-
-
-
-
-    
-    
 </body>
 </html>

@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
+
 <body>
-    <div>
-        <h1>Login</h1>
-        <input class="email" type="text" placeholder="Usuário">
-        <input class="senha" type="password" placeholder="Senha">
-        <button  onclick="window.location.href='/gestao/gestao.html'">Entrar</button>
+
+   <div class="box-article"> 
+
+    <div class="title-1">
+        
+    <h1> Gestor de acesso</H1>
+
     </div>
-     <div id="mensagemErro" style="color: red; display: none;"></div>
+  </div>
+
+    
+
+
+
+    <div class="loginc">
+
+        <h1 class="title-2">Acessar Sistema</h1>
+        <input class="email" type="text" placeholder="Usuário" id="email">
+        <input class="senha" type="password" placeholder="Senha" id="senha">
+        <div class="login-footer">
+            <button onclick="logar()" value="Entrar" id="btn-login">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Entrar
+            </button>
+        </div>
+    </div>
+
     <script src="login.js"></script>
 </body>
+
 </html>

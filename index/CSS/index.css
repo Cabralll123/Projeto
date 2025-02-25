@@ -1,15 +1,7 @@
-/* Estilos gerais */
-/* Estilo para o topo da página */
-.ColorBackground-Cab {
-    width: 100%; /* Largura total */
-    height: 70px; /* Altura fixa */
-    background: linear-gradient(rgb(15, 60, 156) 0%, rgb(17, 73, 110) 100%); /* Gradiente de fundo */
-    position: relative; /* Posicionamento relativo */
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    background-repeat: no-repeat;
-}
+
+@import url(header.css);
+@import url(inputs.css);
+    
 .box-article{
    
     background-color: rgba(228, 228, 228, 0.568); /* Fundo semi-transparente */
@@ -25,19 +17,6 @@
    
   
 
-.Menu-cab{
-    font-family: Arial, Helvetica, sans-serif;
-}
-#gestao { 
-    font-size: 30px;
-    padding: 20px;
-    text-decoration:none;
-
-}
-a{
-    color: rgb(20, 55, 87);
-    
-}
 
 
 body {
@@ -87,6 +66,7 @@ body {
 }
 
 .form-group input,
+
 .form-group select {
     width: 100%; /* Largura total do container */
     padding: 8px; /* Espaçamento interno */
@@ -108,53 +88,4 @@ h2 {
     color: rgb(72, 112, 139); /* Cor do texto */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra do texto */
     margin-bottom: 15px; /* Espaçamento abaixo do título */
-}
-
-
-/* Estilos específicos para inputs */
-#NomeCompleto {
-    width: 600px;
-}
-#sexo,
-#nascimento,
-#RG,
-#CPF,
-#cep,
-#end,
-#cidade,
-#tel,
-#cel,
-#crm,
-#nome-medico,
-
-
-/* Ajustes para inputs menores */
-#sexo,
-#nascimento,
-#RG,
-#CPF,
-#cep,
-#end,
-#cidade,
-#tel,
-#cel,
-#crm,
-#sigla-exame {
-    width: 100%; /* Largura total */
-}
-
-/* Estilo para o input CRM */
-#crm {
-    width: 200px; /* Ajuste conforme o tamanho desejado */
-}
-
-/* Estilo para o input Sigla do Exame */
-#sigla-exame {
-    width: 60px; /* Ajuste conforme o tamanho desejado */
-   
-}
-
-#DescExame{
-    width: 700px;
-
 }

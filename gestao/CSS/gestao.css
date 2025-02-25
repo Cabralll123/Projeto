@@ -1,0 +1,135 @@
+@import url(header.css);
+
+/* Estilos gerais */
+body {
+    background: linear-gradient(0deg, rgb(71, 111, 138) 0%, rgb(200, 230, 250) 100%); /* Gradiente de fundo */
+    height: 100vh; /* Altura total da viewport */   
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Alinha a imagem e as informações no topo */
+    justify-content:center; 
+    gap: 40px; /* Espaçamento entre a imagem e as informações */
+  
+}
+
+/* Imagem */
+.imagem {
+    margin-top: 10%;
+    flex-shrink: 0; /* Impede que a imagem diminua */
+}
+
+/* Informações */
+.informacoes {
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as informações verticalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: -30px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .informacoes {
+        margin-left: 10%; /* Menor margem esquerda em telas pequenas */
+        margin-top: 0; /* Ajuste do topo */
+    }
+}
+
+/* Responsividade para telas muito pequenas (por exemplo, celulares) */
+@media (max-width: 414px) {
+    .informacoes {
+        margin-left: 20%; /* Menor margem esquerda */
+        gap: 15px; /* Menor espaçamento entre os itens */
+    }
+}
+
+/* Esconde a imagem quando a largura for menor ou igual a 400px */
+@media (max-width: 414px) {
+    .container img{
+        display: none; /* A imagem desaparecerá */
+    }
+    .informacoes{
+        display: flex;
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente */
+        text-align: center; /* Centraliza o texto dentro dos elementos */
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+
+
+
+
+}
+
+
+
+/* Estilo dos itens */
+.item1, .item2, .item3 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    align-items: flex-start; /* Alinha a imagem e as informações no topo */
+    justify-content: flex-start; /* Alinha tudo à esquerda */
+    gap: 40px; /* Espaçamento entre a imagem e as informações */
+}
+
+/* Imagem */
+.imagem {
+    flex-shrink: 0; /* Impede que a imagem diminua */
+}
+
+/* Informações */
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as informações verticalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo dos itens */
+.item1, .item2, .item3 {
+    text-align: center;
+}
+
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+button{
+  
+    width: 200px;  /* Largura do botão */
+    height: 40px;  /* Altura do botão */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  rgb(227, 244, 255);
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+button:hover {
+    background-color: rgba(71, 111, 138); 
+}
+
+#title-cad {
+    font-size: 40px; /* Tamanho da fonte */
+    color: rgb(27, 82, 119); /* Cor do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+

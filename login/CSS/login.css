@@ -1,0 +1,110 @@
+body {
+    background-image: url(https://isac.org.br/wp-content/uploads/2024/04/experiencia-do-paciente-cuidados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginc {
+    background-color: rgba(0, 110, 255, 0.37);
+    backdrop-filter: blur(25px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+    max-width: 400px; /* Limita a largura do formulário */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.email:focus, .senha:focus {
+    outline: none;
+}
+
+button {
+    background-color: rgba(13, 38, 180, 0.712);
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botão ocupa toda a largura */
+    margin: 20px 0; /* Espaçamento do botão */
+}
+
+button:hover {
+    background-color: rgba(5, 30, 100, 0.836);
+}
+
+/* Estilo para o contêiner que envolve o botão e o link de registro */
+.login-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo para o link de registro */
+#registro {
+    font-size: 14px;
+    margin: 5px;
+}
+
+#registro p {
+    margin: 0;
+    display: inline;
+}
+
+#registro a {
+    color: white;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+#registro a:hover {
+    text-decoration: none;
+}
+
+
+
+.box-article{
+
+       
+    background-color: rgba(0, 110, 255, 0.37); /* Fundo semi-transparente */
+    backdrop-filter: blur(30px); /* Aplica um desfoque no fundo */
+    position: relative; /* Posicionamento relativo */
+    top: 15px; /* Distância do topo */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Espaçamento interno */
+    margin-top:  -20px;
+    border-radius: 15px;
+
+
+}
+
+.title-1{
+
+    color: white;
+}
